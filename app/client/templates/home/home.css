@@ -4,3 +4,10 @@
 .original-box-button-container {
   text-align: right;
 }
+
+.header{
+	color: white;
+	background-color: #53529F;
+	margin: 0;
+	padding-left: 10px;
+}

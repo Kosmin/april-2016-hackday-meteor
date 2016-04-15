@@ -1,13 +1,13 @@
 <template name="Home">
   <div class="row expanded">
     <div class="large-12 columns">
-      <h3>Risk Heatmap</h3>
+      <h3 class="header">Risk Heatmap</h3>
     </div>
   </div>
 
   {{> highchartsHelper chartId="test" chartWidth="95%" charHeight="95%" chartObject=topGenresChart}}
 
-  <table id="datatable" style="margin: 0px auto;" width="400">
+  <table id="datatable">
       <thead>
           <tr>
               <th>Rank</th>
