@@ -1,42 +1,11 @@
 <template name="Home">
   <div class="row expanded">
     <div class="large-12 columns">
-      <h3>Welcome to our Pair Programming app</h3>
+      <h3>Risk Heatmap</h3>
     </div>
   </div>
 
-  <div class="row expanded">&nbsp;<br/>&nbsp;</div>
-
-  <div class="row expanded">
-    <div class="large-1 columns">
-      <label>Snippet Identifier:</label>
-      <input type="text" placeholder="no-token-specified"
-      value={{currentSnippet.token}}
-      disabled="disabled" />
-    </div>
-  </div>
-
-  <div class="row expanded">&nbsp;<br/>&nbsp;</div>
-
-  <div class="row expanded">
-    <div class="large-6 columns">
-      <div class="callout large">
-        <h4>Your code snippet:</h4>
-        <div id="original-code-box"></div>
-      </div>
-    </div>
-    <div class="large-6 columns">
-      <div class="callout large">
-        <h4>Suggestion:</h4>
-        <div id="suggestion-code-box"></div>
-      </div>
-    </div>
-  </div>
-
-  {{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}}
-
-
-  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  {{> highchartsHelper chartId="test" chartWidth="95%" charHeight="95%" chartObject=topGenresChart}}
 
   <table id="datatable">
       <thead>
@@ -74,6 +43,4 @@
           </tr>
       </tbody>
   </table>
-
-
 </template>
